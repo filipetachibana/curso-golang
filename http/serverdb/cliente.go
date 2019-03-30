@@ -19,7 +19,6 @@ type Usuario struct {
 }
 
 // UsuarioHandler Analisa o request e delega para função adequada
-
 func UsuarioHandler(w http.ResponseWriter, r *http.Request) {
 	sid := strings.TrimPrefix(r.URL.Path, "/usuarios/")
 	id, _ := strconv.Atoi(sid)
